@@ -3,12 +3,11 @@
 
 function largestSwap(n) {
   if (n < 10 || n > 99) return false;
-  // Could probably do type validation with another function
-  let toSwap = typeof n !== "string" ? String(n) : n;
+  if (typeof n !== "number") return false;
 
-  let swapped = toSwap.trim().split("").reverse().join("");
+  let swapped = Number(String(n).trim().split("").reverse().join(""));
 
-  if (toSwap > swapped || toSwap === swapped) return true;
+  if (n > swapped || n === swapped) return true;
   return false;
 }
 
