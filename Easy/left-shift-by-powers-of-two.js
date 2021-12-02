@@ -20,5 +20,5 @@ console.log( shiftToLeft(12, 4) );
 console.log( shiftToLeft("12", " 4 ") );
 
 // Exceptional
-console.log(shiftToLeft("Hello", "World"));
+console.log( shiftToLeft("Hello", "World") );
 
